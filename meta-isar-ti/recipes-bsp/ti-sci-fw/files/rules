@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+# Set compiler to use
+export CROSS_COMPILE=$(DEB_HOST_GNU_TYPE)-
+
+override_dh_auto_build:
+	# Make do not set default CFLAGS if non empty, so clear it
+	# To use local SYSFW clear downloads URLs
+	unset CFLAGS && $(MAKE) -C imggen SYSFW_DL_URL= SYSFW_HS_DL_URL= \
+	SYSFW_HS_INNER_CERT_DL_URL= SYSFW_PATH="$(PWD)/ti-sysfw/ti-sci-firmware-am64x-gp.bin" \
+	SOC=am64x CONFIG=evm SBL="/usr/lib/u-boot/am64xx-evm/u-boot-spl.bin"
+
+override_dh_auto_test:
+	# We don't have make check target, so don't need it
+	echo "skipping test"
+
+override_dh_auto_install:
+	# Export tiboot3.bin into output deb
+	install -d debian/ti-sci-fw/usr/lib/ti-sci-fw
+	install -m 644 imggen/tiboot3.bin debian/ti-sci-fw/usr/lib/ti-sci-fw/
+
+# All other steps will be handled here
+%:
+	dh \$@

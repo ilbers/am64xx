@@ -1,5 +1,5 @@
-What to test: Isar build warning fixing.
-  
+What to test: Building ti-sci-fw as an example of non Debian package.
+
 How to test:
 Build the image.
 
