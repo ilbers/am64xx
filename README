@@ -1,7 +1,1 @@
-What to test: Adding prebuild packages.
-
-How to test:
-Build the image and unpack tar.gz to the target rootfs, boot it.
-
-Expected result:
-Binary codemeter-info should present on target.
+Nothing to test here.
