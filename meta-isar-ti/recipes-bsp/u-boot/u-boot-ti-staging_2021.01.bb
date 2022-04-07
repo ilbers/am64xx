@@ -7,10 +7,10 @@ SRC_URI += " git://git.ti.com/ti-u-boot/ti-u-boot.git;branch=${BRANCH}"
 SRCREV = "15769936a559b1840f50b83f94ee0c636b245001"
 
 # Build those packages first
-DEPENDS = "ti-prebuild-bins trusted-firmware-a-${MACHINE}"
+DEPENDS = "trusted-firmware-a-${MACHINE} optee-os-${MACHINE}"
 
 # Install those packages into buildchroot before build
-DEBIAN_BUILD_DEPENDS = "bc, bison, flex, device-tree-compiler, git, ti-prebuild-bins, trusted-firmware-a-${MACHINE}"
+DEBIAN_BUILD_DEPENDS = "bc, bison, flex, device-tree-compiler, git, trusted-firmware-a-${MACHINE}, optee-os-${MACHINE}"
 
 S = "${WORKDIR}/git"
 
@@ -29,5 +29,5 @@ do_prepare_build_append() {
 # But exports like that should be better done with custom rules file + templates
 dpkg_runbuild_prepend() {
     export ATF="/usr/lib/trusted-firmware-a/${MACHINE}/bl31.bin"
-    export TEE="/usr/lib/ti-prebuild/bl32.bin"
+    export TEE="/usr/lib/optee-os/${MACHINE}/tee-pager_v2.bin"
 }
