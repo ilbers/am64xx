@@ -12,6 +12,8 @@ repos:
     layers:
       meta:
       meta-isar:
+  meta-isar-ti:
+    path: "meta-isar-ti"
 
 local_conf_header:
   standard: |

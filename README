@@ -1,7 +1,1 @@
-What to test: building qemuarm64 image.
-
-How to test:
-$ ./kas-container build isar.yml
-
-Expected result:
-Test target should be built.
+Nothing to test here.
