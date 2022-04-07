@@ -1,9 +1,9 @@
-What to test: building am64xx-evm image.
+What to test: booting am64xx-evm image with prebuild kernel and dtb.
 
 How to test:
-$ ./kas-container build isar.yml
+Build the image and unpack tar.gz to the target rootfs.
 
 Expected result:
-Test target should be built.
+Kernel should start booting.
 
-Note: there is no kernel and dtb here, so rootfs is not bootable.
+Note: prebuild kernel and dtb from Yocto used here, firmware can not be fully bootable.
