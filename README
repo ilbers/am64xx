@@ -1,4 +1,4 @@
-What to test: Building custom U-Boot.
+What to test: Building custom Trusted Firmware-A binary.
   
 How to test:
 Build the image and flash wic.img to the target SD card, boot it.
