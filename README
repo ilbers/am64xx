@@ -1,9 +1,7 @@
-What to test: booting am64xx-evm image with prebuild kernel and dtb.
+What to test: building and booting am64xx-evm kernel.
 
 How to test:
 Build the image and unpack tar.gz to the target rootfs.
 
 Expected result:
-Kernel should start booting.
-
-Note: prebuild kernel and dtb from Yocto used here, firmware can not be fully bootable.
+Target should be bootable.
