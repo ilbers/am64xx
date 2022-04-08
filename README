@@ -1,7 +1,7 @@
-What to test: Adding packages from custom repositories.
+What to test: Adding prebuild packages.
 
 How to test:
 Build the image and unpack tar.gz to the target rootfs, boot it.
 
 Expected result:
-Docker and docker-compose tools should present on target.
+Binary codemeter-info should present on target.
