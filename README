@@ -5,5 +5,3 @@ $ ./kas-container build isar.yml
 
 Expected result:
 Test target should be built.
- 
-Note: kas shell + manual bitbake execution should also work.
