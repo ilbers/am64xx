@@ -26,3 +26,5 @@ local_conf_header:
 
     # local packages
     IMAGE_INSTALL += "hostname-change"
+    # packages from Debian repo
+    IMAGE_PREINSTALL += "isc-dhcp-client"

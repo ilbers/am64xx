@@ -1,7 +1,7 @@
-What to test: Changing hostname.
+What to test: Adding network tools.
 
 How to test:
 Build the image and unpack tar.gz to the target rootfs, boot it.
 
 Expected result:
-Hostname should be changed to 'isar'.
+Network tools like ip should present on rootfs.
