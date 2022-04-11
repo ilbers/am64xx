@@ -1,7 +1,9 @@
-What to test: getting qemuamd64 console.
+What to test: building qemuarm64 image.
 
 How to test:
-Build the target and boot it using QEMU.
+$ ./kas-container build isar.yml
 
 Expected result:
-Login should work.
+Test target should be built.
+ 
+Note: kas shell + manual bitbake execution should also work.

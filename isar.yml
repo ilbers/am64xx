@@ -3,8 +3,8 @@ header:
 build_system: isar
 
 distro: debian-bullseye
-machine: qemuamd64
-target: mc:qemuamd64-bullseye:isar-image-base
+machine: qemuarm64
+target: mc:qemuarm64-bullseye:isar-image-base
 repos:
   isar:
     url: "http://github.com:/ilbers/isar"
