@@ -12,3 +12,10 @@ repos:
     layers:
       meta:
       meta-isar:
+
+local_conf_header:
+  standard: |
+    USERS += "root"
+    USER_root[password] = "root"
+    # encrypted password is used by default
+    USER_root[flags] += "clear-text-password"
