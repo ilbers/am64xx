@@ -1,0 +1,11 @@
+header:
+  version: 11
+build_system: isar
+
+repos:
+  isar:
+    url: "http://github.com:/ilbers/isar"
+    refspec: "85f8245d92aa4d879356a02ce41cf9bf757909e8"
+    layers:
+      meta:
+      meta-isar:

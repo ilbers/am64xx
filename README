@@ -1,1 +1,9 @@
-Nothing to test here.
+What to test: kas shell open.
+
+How to test:
+$ ./kas-container shell isar.yml
+
+Expected result:
+Kas shell should be opened.
+
+Note: if you need to build any target local.conf should be changed.
