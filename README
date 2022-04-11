@@ -1,7 +1,7 @@
-What to test: building and booting am64xx-evm kernel.
+What to test: Changing hostname.
 
 How to test:
-Build the image and unpack tar.gz to the target rootfs.
+Build the image and unpack tar.gz to the target rootfs, boot it.
 
 Expected result:
-Target should be bootable.
+Hostname should be changed to 'isar'.

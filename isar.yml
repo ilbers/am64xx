@@ -23,3 +23,6 @@ local_conf_header:
     USER_root[password] = "root"
     # encrypted password is used by default
     USER_root[flags] += "clear-text-password"
+
+    # local packages
+    IMAGE_INSTALL += "hostname-change"
