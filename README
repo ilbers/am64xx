@@ -1,9 +1,9 @@
-What to test: kas shell open.
+What to test: building qemuamd64 image.
 
 How to test:
-$ ./kas-container shell isar.yml
+$ ./kas-container build isar.yml
 
 Expected result:
-Kas shell should be opened.
+Test target should be built.
 
-Note: if you need to build any target local.conf should be changed.
+Note: kas shell + manual bitbake execution should also work.
