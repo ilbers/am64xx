@@ -1,1 +1,9 @@
-Nothing to test here.
+What to test: building am64xx-evm image.
+
+How to test:
+$ ./kas-container build isar.yml
+
+Expected result:
+Test target should be built.
+
+Note: there is no kernel and dtb here, so rootfs is not bootable.
