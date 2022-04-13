@@ -4,7 +4,8 @@ BRANCH = "ti-rt-linux-5.10.y"
 
 SRC_URI += " \
     git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git;branch=${BRANCH} \
-    file://ti-defconfig"
+    file://ti-defconfig \
+    file://enable-rt.cfg"
 
 SRCREV = "541ec9a6995c3dd881d6f0b63cc714a08ded457d"
 

@@ -1,7 +1,7 @@
-What to test: Building custom OP-TEE binary.
-  
+What to test: Enabling of PREEMPT_RT kernel mode.
+
 How to test:
 Build the image and flash wic.img to the target SD card, boot it.
 
 Expected result:
-Image should be bootable.
+Kernel version should include "SMP PREEMPT RT" string.
