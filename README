@@ -1,7 +1,7 @@
-What to test: Isar release version changing.
+What to test: Isar build warning fixing.
   
 How to test:
-Build the image and flash wic.img to the target SD card, boot it.
+Build the image.
 
 Expected result:
-Os-release BUILD_ID value should look like: month.year.
+Warning 'bootloader config not specified, using defaults' should not appear.
