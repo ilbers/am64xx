@@ -1,7 +1,7 @@
-What to test: Enabling of PREEMPT_RT kernel mode.
-
+What to test: Isar release version changing.
+  
 How to test:
 Build the image and flash wic.img to the target SD card, boot it.
 
 Expected result:
-Kernel version should include "SMP PREEMPT RT" string.
+Os-release BUILD_ID value should look like: month.year.

@@ -28,3 +28,5 @@ local_conf_header:
     IMAGE_INSTALL += "hostname-change"
     # packages from Debian repo
     IMAGE_PREINSTALL += "isc-dhcp-client"
+
+    ISAR_RELEASE_CMD = "echo "$(date '+%Y.%m')-$(git -C ${LAYERDIR_ti} rev-parse --short HEAD)""
